@@ -4,19 +4,19 @@ import { useState } from 'react';
 const faqs = [
   {
     question: "Why not just use ChatGPT?",
-    answer: "ChatGPT is great for linear Q&A, but marketing isn't linear. Spine gives you an infinite canvas to explore multiple campaign angles simultaneously, compare model outputs side-by-side, and build a knowledge graph of your brand strategy—not just a chat log."
+    answer: "ChatGPT is great for linear Q&A, but your work isn't linear. Spine gives you an infinite canvas to explore multiple campaign angles simultaneously, compare model outputs side-by-side, and build a knowledge graph of your brand strategy—not just a chat log."
   },
   {
     question: "Is this an automation tool, like Zapier?",
-    answer: "No, Spine is a thinking workspace. While you can create repeatable workflows, it's designed for the creative and strategic process of marketing—ideation, drafting, refining, and planning—rather than just background automation."
+    answer: "No. Automation tools are for clear well structured processes, where you know what each step will be every time. Spine let's you have the best of both exploration, figuring out what you need to do next based on what you find, and automation, repeating your process once you've found something that works for you."
   },
   {
     question: "What kind of sources does Spine use?",
-    answer: "You can bring in anything: PDFs, websites, YouTube videos, CSVs, and more. Spine allows you to chat with your market research, competitor ads, and internal documents directly on the canvas."
+    answer: "There are many different types of sources you can use in Spine. Add your own documents, spreadsheets, specific webpages, even youTube videos directly to the canvas. You can also search across millions of public sources, from academic papers to news articles to company websites. Every insight is traceable back to its original source."
   },
   {
     question: "Is my data secure?",
-    answer: "Absolutely. Your proprietary marketing data and strategy documents are yours. We prioritize security and privacy to ensure your competitive advantage stays safe."
+    answer: "Your uploaded documents and research remain private to your workspace. We never train on your proprietary data, and you can delete your research at any time. Enterprise plans include additional security controls and compliance options."
   }
 ];
 

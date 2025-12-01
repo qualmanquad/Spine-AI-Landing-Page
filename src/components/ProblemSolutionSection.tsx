@@ -1,4 +1,4 @@
-import { AlertTriangle, CheckCircle2, Network, FileText, GitBranch, Zap, MessageSquare, XCircle, Lock } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, Network, FileText, GitBranch, Zap, MessageSquare, XCircle, Lock, RotateCcw, RefreshCw } from 'lucide-react';
 
 const problemSolutions = [
   {
@@ -55,6 +55,20 @@ const problemSolutions = [
       title: "300+ AI Models in One Workspace",
       description: "Use GPT-4 for analysis, Claude for writing, and compare outputs side-by-side. Switch models instantly—no more platform lock-in.",
       visual: "canvas-models"
+    }
+  },
+  {
+    problem: {
+      icon: <RotateCcw className="w-6 h-6 text-orange-600" />,
+      title: "Can't Change Early Inputs",
+      description: "Your conversations grow huge, and you realize you made a mistake or want to change something from the start. You can't go back—you're stuck starting a new chat or accepting the loss of all your work.",
+      visual: "locked-conversation"
+    },
+    solution: {
+      icon: <RefreshCw className="w-6 h-6 text-indigo-600" />,
+      title: "Re-Run Every Branch with New Inputs",
+      description: "Change an input from the beginning, and Spine automatically re-runs every branch downstream. No need to start over—your entire workflow updates instantly with the new information.",
+      visual: "canvas-rerun"
     }
   }
 ];
