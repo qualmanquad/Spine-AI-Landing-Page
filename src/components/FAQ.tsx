@@ -24,27 +24,27 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-32 bg-gray-50">
+    <section className="py-32 bg-slate-3">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-semibold text-center text-gray-900 mb-20 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-semibold text-center text-slate-12 mb-20 tracking-tight">
           Frequently asked questions
         </h2>
         
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-2xl border border-gray-200 overflow-hidden transition-all duration-200 hover:border-gray-300">
+            <div key={index} className="bg-slate-1 rounded-2xl border border-slate-6 overflow-hidden transition-all duration-200 hover:border-slate-8">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none"
               >
-                <span className="text-lg font-medium text-gray-900">{faq.question}</span>
-                <span className="text-gray-400 flex-shrink-0 ml-4">
+                <span className="text-lg font-medium text-slate-12">{faq.question}</span>
+                <span className="text-slate-8 flex-shrink-0 ml-4">
                   {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
                 </span>
               </button>
               
               {openIndex === index && (
-                <div className="px-8 pb-8 text-gray-600 leading-relaxed">
+                <div className="px-8 pb-8 text-slate-11 leading-relaxed">
                   {faq.answer}
                 </div>
               )}

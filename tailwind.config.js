@@ -7,10 +7,23 @@ export default {
   theme: {
     extend: {
       colors: {
+        slate: {
+          12: '#11181c', // Headline text & dark backgrounds
+          11: '#717476', // Body text
+          8: '#949596',  // Disabled text
+          6: '#e4e5e6', // Borders & dividers
+          3: '#f3f4f5', // Soft backgrounds & accents
+          1: '#fdfdfd', // Container / Card backgrounds
+        },
+        accent: {
+          purple: '#6e56cf',  // Slate Purple
+          azure: '#007FFF',   // Brilliant Azure (standard azure, as provided values were incorrect)
+          pink: '#e93d82',    // Cerise Pink
+        },
         brand: {
-          dark: '#0f172a',
-          light: '#f8fafc',
-          accent: '#3b82f6'
+          dark: '#11181c',    // Slate 12
+          light: '#fdfdfd',   // Slate 1
+          accent: '#6e56cf'   // Slate Purple
         }
       },
       fontFamily: {

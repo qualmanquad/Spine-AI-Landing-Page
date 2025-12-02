@@ -4,13 +4,16 @@
 
 @layer base {
   body {
-    @apply bg-white text-brand-dark antialiased;
+    background-color: #fdfdfd; /* slate-1 */
+    color: #11181c; /* slate-12 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
 @layer utilities {
   .bg-dot-pattern {
-    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-image: radial-gradient(rgb(228 229 230) 1px, transparent 1px);
     background-size: 24px 24px;
   }
 }

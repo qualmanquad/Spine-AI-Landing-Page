@@ -79,11 +79,11 @@ export default function UseCases() {
   const activeContent = tabs.find(t => t.id === activeTab)!;
 
   return (
-    <section id="use-cases" className="py-24 bg-white">
+    <section id="use-cases" className="py-24 bg-slate-1">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Use Cases</h2>
-          <p className="text-xl text-gray-600">Spine adapts to your role, not the other way around.</p>
+          <h2 className="text-4xl font-bold text-slate-12 mb-4">Use Cases</h2>
+          <p className="text-xl text-slate-11">Spine adapts to your role, not the other way around.</p>
         </div>
 
         {/* Tabs */}
@@ -94,8 +94,8 @@ export default function UseCases() {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all duration-200 ${
                 activeTab === tab.id
-                  ? 'bg-black text-white shadow-lg scale-105'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  ? 'bg-slate-12 text-slate-1 shadow-lg scale-105'
+                  : 'bg-slate-3 text-slate-11 hover:bg-slate-6'
               }`}
             >
               {tab.icon}
@@ -105,28 +105,28 @@ export default function UseCases() {
         </div>
 
         {/* Content Card */}
-        <div className="bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-200 animate-fadeIn">
+        <div className="bg-slate-3 rounded-3xl p-8 md:p-12 border border-slate-6 animate-fadeIn">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
+              <div className="inline-block px-3 py-1 bg-accent-azure/20 text-accent-azure rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
                 {activeContent.role}
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-slate-12 mb-6 leading-tight">
                 {activeContent.headline}
               </h3>
-              <p className="text-lg text-gray-600 mb-8 italic border-l-4 border-gray-300 pl-4">
+              <p className="text-lg text-slate-11 mb-8 italic border-l-4 border-slate-6 pl-4">
                 "{activeContent.pain}"
               </p>
               
               <div className="space-y-6">
                 {activeContent.features.map((feature, idx) => (
                   <div key={idx} className="flex gap-4">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-xs font-bold mt-1">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-slate-12 text-slate-1 flex items-center justify-center text-xs font-bold mt-1">
                       {idx + 1}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">{feature.title}</h4>
-                      <p className="text-sm text-gray-600">{feature.desc}</p>
+                      <h4 className="font-semibold text-slate-12 mb-1">{feature.title}</h4>
+                      <p className="text-sm text-slate-11">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -134,14 +134,14 @@ export default function UseCases() {
             </div>
 
             {/* Visual Placeholder */}
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 aspect-square md:aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group">
+            <div className="bg-slate-1 rounded-2xl shadow-xl border border-slate-6 aspect-square md:aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group">
               <div className="absolute inset-0 bg-dot-pattern opacity-30"></div>
               <div className="text-center relative z-10">
-                 <div className="w-16 h-16 mx-auto bg-gray-100 rounded-xl flex items-center justify-center mb-4 text-gray-400">
+                 <div className="w-16 h-16 mx-auto bg-slate-3 rounded-xl flex items-center justify-center mb-4 text-slate-8">
                    {activeContent.icon}
                  </div>
-                 <p className="text-gray-400 font-medium">Interactive Workflow Demo</p>
-                 <p className="text-xs text-gray-300 mt-2">Shows {activeContent.label} flow</p>
+                 <p className="text-slate-8 font-medium">Interactive Workflow Demo</p>
+                 <p className="text-xs text-slate-8 mt-2">Shows {activeContent.label} flow</p>
               </div>
             </div>
           </div>
