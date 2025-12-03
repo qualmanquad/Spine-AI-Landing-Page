@@ -35,7 +35,7 @@ export default function Hero() {
           {/* Right Image */}
           <div className="relative">
             <img 
-              src="graphics/hero image.avif" 
+              src="graphics/hero image.jpg" 
               alt="Spine AI workspace canvas showing connected workflows"
               className="w-full h-auto rounded-2xl shadow-2xl"
             />

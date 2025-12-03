@@ -3,72 +3,44 @@ import { AlertTriangle, CheckCircle2, Network, FileText, GitBranch, Zap, Message
 const problemSolutions = [
   {
     problem: {
-      icon: <MessageSquare className="w-6 h-6 text-accent-pink" />,
+      icon: <MessageSquare className="w-6 h-6 text-slate-11" />,
       title: "No Cross-Thread Memory",
       description: "Switch to a new topic or start a new chat, and all your previous context disappears. The AI forgets what you were working on, what decisions you made, and why.",
-      image: "/graphics/context-pain.png"
+      image: "/graphics/context-not-passing2.png"
     },
     solution: {
-      icon: <Network className="w-6 h-6 text-accent-purple" />,
+      icon: <Network className="w-6 h-6" style={{ color: '#6e56cf' }} />,
       title: "Visual Canvas That Preserves Context",
       description: "Your entire workflow lives on one canvas. Files, conversations, and decisions are visually connected—no more losing context when you switch topics.",
-      image: "/graphics/context-passing.jpg"
+      image: "/graphics/appinputs2.png"
     }
   },
   {
     problem: {
-      icon: <XCircle className="w-6 h-6 text-accent-pink" />,
-      title: "Files Get Disconnected",
-      description: "Upload a PDF or image in one conversation, and it's trapped there. Reference it in another chat, and the AI has no idea what you're talking about—even though you already provided it.",
-      image: "/graphics/problem-disconnected-files.png"
-    },
-    solution: {
-      icon: <FileText className="w-6 h-6 text-accent-azure" />,
-      title: "Files Connected Across Your Workspace",
-      description: "Upload a PDF once, reference it everywhere. Your documents, images, and media are part of your workspace, not trapped in individual chats.",
-      image: "/graphics/solution-canvas-files.png"
-    }
-  },
-  {
-    problem: {
-      icon: <AlertTriangle className="w-6 h-6 text-accent-pink" />,
-      title: "The 'Why' Gets Lost",
-      description: "Your reasoning, constraints, and decision-making process vanish the moment you change topics. You're forced to re-explain your entire thought process every single time.",
-      image: "/graphics/problem-lost-reasoning.png"
-    },
-    solution: {
-      icon: <GitBranch className="w-6 h-6 text-accent-purple" />,
-      title: "Branch Your Logic, Keep Your Reasoning",
-      description: "Create parallel paths to explore different approaches. Your decision tree is visible, and the 'why' behind each choice is preserved.",
-      image: "/graphics/solution-canvas-branching.png"
-    }
-  },
-  {
-    problem: {
-      icon: <Lock className="w-6 h-6 text-accent-pink" />,
+      icon: <Lock className="w-6 h-6 text-slate-11" />,
       title: "Locked Into One Model",
-      description: "You're stuck with whatever AI model that platform offers. Need GPT-4 for analysis but Claude for writing? Want to compare outputs? You're out of luck—each tool is a silo.",
-      image: "/graphics/problem-single-model.png"
+      description: "You're stuck with whatever AI model that platform offers. Need GPT-4 for analysis but Claude for writing? Want to compare outputs? You're out of luck — each tool is a silo.",
+      image: "/graphics/modellock.png"
     },
     solution: {
-      icon: <Zap className="w-6 h-6 text-accent-purple" />,
+      icon: <Zap className="w-6 h-6" style={{ color: '#6e56cf' }} />,
       title: "300+ AI Models in One Workspace",
       description: "Use GPT-4 for analysis, Claude for writing, and compare outputs side-by-side. Switch models instantly—no more platform lock-in.",
-      image: "/graphics/solution-canvas-models.png"
+      image: "/graphics/300models.png"
     }
   },
   {
     problem: {
-      icon: <RotateCcw className="w-6 h-6 text-accent-pink" />,
+      icon: <RotateCcw className="w-6 h-6 text-slate-11" />,
       title: "Can't Change Early Inputs",
       description: "Your conversations grow huge, and you realize you made a mistake or want to change something from the start. You can't go back—you're stuck starting a new chat or accepting the loss of all your work.",
-      image: "/graphics/problem-locked-conversation.png"
+      image: "/graphics/contextlock.png"
     },
     solution: {
-      icon: <RefreshCw className="w-6 h-6 text-accent-purple" />,
+      icon: <RefreshCw className="w-6 h-6" style={{ color: '#6e56cf' }} />,
       title: "Re-Run Every Branch with New Inputs",
       description: "Change an input from the beginning, and Spine automatically re-runs every branch downstream. No need to start over—your entire workflow updates instantly with the new information.",
-      image: "/graphics/solution-canvas-rerun.png"
+      image: "/graphics/context-connection.png"
     }
   }
 ];
@@ -79,10 +51,10 @@ export default function ProblemSolutionSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-12 mb-6 tracking-tight leading-tight">
-            Modern chat interfaces treat every conversation as a <span className="text-accent-pink">linear thread</span>.
+            Modern chat interfaces treat every conversation as a linear thread.
           </h2>
           <p className="text-xl md:text-2xl text-slate-11 leading-relaxed">
-            But your work isn't linear—it's a <span className="text-accent-purple font-semibold">web of decisions</span>, files, and connections that current AI tools can't preserve.
+            But your work isn't linear—it's a web of decisions, files, and connections that current AI tools can't preserve.
           </p>
         </div>
 
@@ -97,10 +69,10 @@ export default function ProblemSolutionSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-3">
-                      <AlertTriangle className="w-5 h-5 text-accent-pink" />
-                      <h3 className="text-xl font-semibold text-accent-pink">Problem</h3>
+                      <AlertTriangle className="w-5 h-5 text-slate-11" />
+                      <h3 className="text-xl font-semibold text-slate-12">Problem</h3>
                     </div>
-                    <h4 className="font-semibold text-accent-pink mb-2">{item.problem.title}</h4>
+                    <h4 className="font-semibold text-slate-12 mb-2">{item.problem.title}</h4>
                     <p className="text-slate-11 leading-relaxed mb-4">
                       {item.problem.description}
                     </p>
@@ -129,10 +101,10 @@ export default function ProblemSolutionSection() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-3">
-                      <CheckCircle2 className="w-5 h-5 text-accent-purple" />
-                      <h3 className="text-xl font-semibold text-accent-purple">Solution</h3>
+                      <CheckCircle2 className="w-5 h-5" style={{ color: '#6e56cf' }} />
+                      <h3 className="text-xl font-semibold text-slate-12">Solution</h3>
                     </div>
-                    <h4 className="font-semibold text-accent-purple mb-2">{item.solution.title}</h4>
+                    <h4 className="font-semibold text-slate-12 mb-2">{item.solution.title}</h4>
                     <p className="text-slate-11 leading-relaxed mb-4">
                       {item.solution.description}
                     </p>
@@ -160,7 +132,7 @@ export default function ProblemSolutionSection() {
         <div className="mt-16 text-center">
           <div className="inline-block bg-slate-3 rounded-2xl p-8 border border-slate-6 max-w-3xl">
             <p className="text-lg text-slate-11 leading-relaxed">
-              <span className="font-semibold text-accent-purple">One workspace.</span> All your context. <span className="font-semibold text-accent-azure">300+ models.</span> No more starting from zero.
+              <span className="font-semibold text-slate-12">One workspace.</span> All your context. <span className="font-semibold text-slate-12">300+ models.</span> No more starting from zero.
             </p>
           </div>
         </div>
