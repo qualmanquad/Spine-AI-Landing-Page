@@ -10,9 +10,9 @@ const problemSolutions = [
     },
     solution: {
       icon: <Network className="w-6 h-6" style={{ color: '#6e56cf' }} />,
-      title: "Visual Canvas That Preserves Context",
-      description: "Your entire workflow lives on one canvas. Files, conversations, and decisions are visually connected—no more losing context when you switch topics.",
-      image: "/graphics/appinputs2.png"
+      title: "All your information in one place",
+      description: "Your entire workflow lives on one canvas. Your favorite apps, files, conversations, and decisions are visually connected—no more losing context when you switch topics.",
+      image: "/graphics/appinputs3.png"
     }
   },
   {
