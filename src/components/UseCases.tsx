@@ -105,43 +105,25 @@ export default function UseCases() {
         </div>
 
         {/* Content Card */}
-        <div className="bg-slate-3 rounded-3xl p-8 md:p-12 border border-slate-6 animate-fadeIn">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="bg-slate-3 rounded-2xl p-8 md:p-10 border border-slate-6">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-12 mb-4 leading-tight">
+              {activeContent.headline}
+            </h3>
+            <p className="text-lg text-slate-11 mb-10">
+              {activeContent.pain}
+            </p>
+            
+            {/* Features */}
             <div>
-              <div className="inline-block px-3 py-1 bg-accent-azure/20 text-accent-azure rounded-full text-xs font-semibold uppercase tracking-wide mb-6">
-                {activeContent.role}
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-slate-12 mb-6 leading-tight">
-                {activeContent.headline}
-              </h3>
-              <p className="text-lg text-slate-11 mb-8 italic border-l-4 border-slate-6 pl-4">
-                "{activeContent.pain}"
-              </p>
-              
-              <div className="space-y-6">
+              <h4 className="text-sm font-semibold text-slate-12 mb-4 uppercase tracking-wide">Key Features</h4>
+              <div className="space-y-4">
                 {activeContent.features.map((feature, idx) => (
-                  <div key={idx} className="flex gap-4">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-slate-12 text-slate-1 flex items-center justify-center text-xs font-bold mt-1">
-                      {idx + 1}
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-slate-12 mb-1">{feature.title}</h4>
-                      <p className="text-sm text-slate-11">{feature.desc}</p>
-                    </div>
+                  <div key={idx}>
+                    <h5 className="font-semibold text-slate-12 mb-1">{feature.title}</h5>
+                    <p className="text-sm text-slate-11">{feature.desc}</p>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            {/* Visual Placeholder */}
-            <div className="bg-slate-1 rounded-2xl shadow-xl border border-slate-6 aspect-square md:aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-dot-pattern opacity-30"></div>
-              <div className="text-center relative z-10">
-                 <div className="w-16 h-16 mx-auto bg-slate-3 rounded-xl flex items-center justify-center mb-4 text-slate-8">
-                   {activeContent.icon}
-                 </div>
-                 <p className="text-slate-8 font-medium">Interactive Workflow Demo</p>
-                 <p className="text-xs text-slate-8 mt-2">Shows {activeContent.label} flow</p>
               </div>
             </div>
           </div>
